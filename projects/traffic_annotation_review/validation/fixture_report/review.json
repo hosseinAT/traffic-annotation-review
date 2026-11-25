@@ -1,0 +1,176 @@
+{
+  "thresholds": {
+    "min_score": 0.65,
+    "match_iou": 0.5,
+    "candidate_iou": 0.2,
+    "class_iou": 0.65,
+    "duplicate_iou": 0.9,
+    "ignore_ioa": 0.5
+  },
+  "category_ids": [
+    1,
+    3,
+    10
+  ],
+  "coverage": {
+    "images_in_annotations": 4,
+    "images_with_predictions": 3,
+    "verified_evaluated_images": null
+  },
+  "summary": {
+    "matched_boxes": 2,
+    "high_score_predictions": 7,
+    "images_with_findings": 4,
+    "findings": {
+      "missing_box": 1,
+      "class_conflict": 1,
+      "box_alignment": 1,
+      "duplicate_box": 1,
+      "box_out_of_bounds": 1
+    }
+  },
+  "findings": [
+    {
+      "kind": "missing_box",
+      "image_id": 11,
+      "file_name": "street_a.jpg",
+      "annotation": null,
+      "prediction": {
+        "bbox": [
+          300.0,
+          90.0,
+          14.0,
+          36.0
+        ],
+        "category_id": 10,
+        "category": "traffic light",
+        "annotation_id": null,
+        "score": 0.82
+      },
+      "other_annotation": null,
+      "iou": null,
+      "review_id": 1
+    },
+    {
+      "kind": "class_conflict",
+      "image_id": 22,
+      "file_name": "street_b.jpg",
+      "annotation": {
+        "bbox": [
+          50.0,
+          50.0,
+          120.0,
+          70.0
+        ],
+        "category_id": 3,
+        "category": "car",
+        "annotation_id": 201,
+        "score": null
+      },
+      "prediction": {
+        "bbox": [
+          50.0,
+          50.0,
+          120.0,
+          70.0
+        ],
+        "category_id": 1,
+        "category": "person",
+        "annotation_id": null,
+        "score": 0.93
+      },
+      "other_annotation": null,
+      "iou": 1.0,
+      "review_id": 2
+    },
+    {
+      "kind": "box_alignment",
+      "image_id": 33,
+      "file_name": "street_c.jpg",
+      "annotation": {
+        "bbox": [
+          75.0,
+          100.0,
+          40.0,
+          110.0
+        ],
+        "category_id": 1,
+        "category": "person",
+        "annotation_id": 301,
+        "score": null
+      },
+      "prediction": {
+        "bbox": [
+          97.0,
+          100.0,
+          40.0,
+          110.0
+        ],
+        "category_id": 1,
+        "category": "person",
+        "annotation_id": null,
+        "score": 0.92
+      },
+      "other_annotation": null,
+      "iou": 0.2903225806451613,
+      "review_id": 3
+    },
+    {
+      "kind": "duplicate_box",
+      "image_id": 11,
+      "file_name": "street_a.jpg",
+      "annotation": {
+        "bbox": [
+          150.0,
+          40.0,
+          110.0,
+          50.0
+        ],
+        "category_id": 3,
+        "category": "car",
+        "annotation_id": 102,
+        "score": null
+      },
+      "prediction": null,
+      "other_annotation": {
+        "bbox": [
+          151.0,
+          40.0,
+          110.0,
+          50.0
+        ],
+        "category_id": 3,
+        "category": "car",
+        "annotation_id": 103,
+        "score": null
+      },
+      "iou": 0.9819819819819819,
+      "review_id": 4
+    },
+    {
+      "kind": "box_out_of_bounds",
+      "image_id": 44,
+      "file_name": "street_d.jpg",
+      "annotation": {
+        "bbox": [
+          620.0,
+          90.0,
+          30.0,
+          36.0
+        ],
+        "category_id": 10,
+        "category": "traffic light",
+        "annotation_id": 401,
+        "score": null
+      },
+      "prediction": null,
+      "other_annotation": null,
+      "iou": null,
+      "review_id": 5
+    }
+  ],
+  "inputs": {
+    "annotations_sha256": "3b17cfdfe1901ef4107084552cf3e26a1e3b3bfe05ccb476bfa79edfc3cafae1",
+    "predictions_sha256": "02e101a956da6ceb1f28e47eba544dadf4bcf6cfcaac77022e6186411d94991a"
+  }
+}

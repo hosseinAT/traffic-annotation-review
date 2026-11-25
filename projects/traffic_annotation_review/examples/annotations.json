@@ -1,0 +1,23 @@
+{
+  "info": {"description": "Synthetic annotation review fixture"},
+  "images": [
+    {"id": 11, "file_name": "street_a.jpg", "width": 640, "height": 360},
+    {"id": 22, "file_name": "street_b.jpg", "width": 640, "height": 360},
+    {"id": 33, "file_name": "street_c.jpg", "width": 640, "height": 360},
+    {"id": 44, "file_name": "street_d.jpg", "width": 640, "height": 360}
+  ],
+  "categories": [
+    {"id": 1, "name": "person"},
+    {"id": 3, "name": "car"},
+    {"id": 10, "name": "traffic light"}
+  ],
+  "annotations": [
+    {"id": 101, "image_id": 11, "category_id": 1, "bbox": [20, 20, 30, 80], "area": 2400, "iscrowd": 0},
+    {"id": 102, "image_id": 11, "category_id": 3, "bbox": [150, 40, 110, 50], "area": 5500, "iscrowd": 0},
+    {"id": 103, "image_id": 11, "category_id": 3, "bbox": [151, 40, 110, 50], "area": 5500, "iscrowd": 0},
+    {"id": 201, "image_id": 22, "category_id": 3, "bbox": [50, 50, 120, 70], "area": 8400, "iscrowd": 0},
+    {"id": 301, "image_id": 33, "category_id": 1, "bbox": [75, 100, 40, 110], "area": 4400, "iscrowd": 0},
+    {"id": 302, "image_id": 33, "category_id": 1, "bbox": [400, 0, 180, 300], "area": 54000, "iscrowd": 1},
+    {"id": 401, "image_id": 44, "category_id": 10, "bbox": [620, 90, 30, 36], "area": 1080, "iscrowd": 0}
+  ]
+}

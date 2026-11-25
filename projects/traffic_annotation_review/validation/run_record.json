@@ -1,0 +1,116 @@
+{
+  "software": {
+    "torch": "2.1.0+cpu",
+    "mmcv": "2.1.0",
+    "mmengine": "0.10.7",
+    "mmdet": "3.3.0",
+    "pycocotools": "2.0.11",
+    "numpy": "1.26.4",
+    "scipy": "1.17.1"
+  },
+  "python": "3.11.18",
+  "platform": "Linux x86_64",
+  "unit_tests_passed": 7,
+  "coco_subset": {
+    "annotation_sha256": "e8c7f7908f1d7278341fae127d0da654f102f11bd7b21d8aeefa635b8c810b6f",
+    "selection": "Lowest COCO IDs with a non-crowd person and at least one traffic category",
+    "image_ids": [
+      1584,
+      2006,
+      5001,
+      5037,
+      6040,
+      7088,
+      7816,
+      8211,
+      9769,
+      9891,
+      11149,
+      11197
+    ],
+    "annotation_count": 122,
+    "image_source": "https://huggingface.co/datasets/merve/coco/resolve/main/val2017/"
+  },
+  "official_checkpoint_sha256": "78e30dcce0c6f594eaff0d6977b84b4103688b4aff0ad1aa16008a8cc854a7fb",
+  "all_three_bbox_exports_sha256": "ac2418ae493a0cf9572c550505f5a39c15946a47b7363b4d737423457d330553",
+  "clean_baseline": {
+    "bbox_mAP": 0.46,
+    "bbox_mAP_50": 0.6,
+    "bbox_mAP_75": 0.539,
+    "bbox_mAP_s": 0.34,
+    "bbox_mAP_m": 0.401,
+    "bbox_mAP_l": 0.819
+  },
+  "clean_with_review": {
+    "bbox_mAP": 0.46,
+    "bbox_mAP_50": 0.6,
+    "bbox_mAP_75": 0.539,
+    "bbox_mAP_s": 0.34,
+    "bbox_mAP_m": 0.401,
+    "bbox_mAP_l": 0.819
+  },
+  "controlled_with_review": {
+    "bbox_mAP": 0.416,
+    "bbox_mAP_50": 0.567,
+    "bbox_mAP_75": 0.506,
+    "bbox_mAP_s": 0.34,
+    "bbox_mAP_m": 0.401,
+    "bbox_mAP_l": 0.693
+  },
+  "controlled_annotation_changes": [
+    [
+      "missing_box",
+      1584,
+      365622
+    ],
+    [
+      "class_conflict",
+      2006,
+      165069
+    ],
+    [
+      "box_alignment",
+      5001,
+      1328232
+    ],
+    [
+      "duplicate_box",
+      5037,
+      169115
+    ],
+    [
+      "box_out_of_bounds",
+      6040,
+      172843
+    ]
+  ],
+  "controlled_findings": [
+    [
+      "missing_box",
+      1584,
+      null
+    ],
+    [
+      "class_conflict",
+      2006,
+      165069
+    ],
+    [
+      "box_alignment",
+      5001,
+      1328232
+    ],
+    [
+      "duplicate_box",
+      5037,
+      169115
+    ],
+    [
+      "box_out_of_bounds",
+      6040,
+      172843
+    ]
+  ],
+  "native_offline_findings_identical": true,
+  "scope": "Integration check on a fixed public subset and deliberate edits selected from baseline matches."
+}

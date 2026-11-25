@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prüfbericht für Bildannotationen</title>
+<style>
+* {box-sizing:border-box} body {margin:0;background:#eef3f7;color:#152333;font:16px/1.55 system-ui,sans-serif}
+main {max-width:1300px;margin:auto;padding:36px 24px 64px}
+h1 {margin:0;font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.15} h2 {font-size:1.25rem}
+header {background:#173454;color:white;border-radius:16px;padding:30px}
+header p {color:#d6e6f5;margin:10px 0 0} a {color:#144777}
+ul {display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;padding:0;list-style:none}
+li {background:white;border-radius:12px;padding:13px 17px} li strong {display:block;font-size:1.6rem}
+section {background:white;border-radius:12px;padding:20px} .table {overflow:auto}
+table {width:100%;border-collapse:collapse;text-align:left}
+th, td {padding:11px 10px;vertical-align:top;border-bottom:1px solid #dbe5ed}
+th {background:#edf5fc} small {color:#4a6073} td {overflow-wrap:anywhere}
+</style></head><body><main>
+<header><h1>Prüfbericht für Bildannotationen</h1><p>5 Prüfvorschläge · 5 betroffene Bilder</p><p>12 ausgewertete Bilder bei 12 Einträgen.</p></header>
+<ul aria-label="Anzahl je Prüfgrund"><li><strong>1</strong>Möglicherweise fehlende Box</li><li><strong>1</strong>Abweichende Klasse</li><li><strong>1</strong>Abweichende Box</li><li><strong>1</strong>Mögliche doppelte Box</li><li><strong>1</strong>Box außerhalb des Bildes</li></ul>
+<section><h2>Prüfliste</h2>
+<p>Vergleiche die markierten Boxen und Klassen im Originalbild. Modellvorhersagen sind Hinweise für die Prüfung.</p>
+<p>Die Tabelle zeigt 5 von 5 Zeilen. Die CSV enthält alle Vorschläge und eine Spalte für die manuelle Entscheidung. <a href="review.csv">CSV öffnen</a> · <a href="review.json">JSON öffnen</a></p>
+<div class="table"><table><thead><tr><th>Nr.</th><th>Prüfgrund</th><th>Bild</th><th>Annotation</th>
+<th>Vorhersage oder zweite Annotation</th><th>IoU</th></tr></thead>
+<tbody><tr><td>1</td><td>Möglicherweise fehlende Box</td><td>000000001584.jpg<br><small>ID 1584</small></td><td>—</td><td>bus · Score 0.920<br><small>xywh 128.8, 86.5, 393.4, 448.5</small></td><td>—</td></tr>
+<tr><td>2</td><td>Abweichende Klasse</td><td>000000002006.jpg<br><small>ID 2006</small></td><td>car · ID 165069<br><small>xywh 46.4, 80.9, 563.1, 345.2</small></td><td>bus · Score 0.911<br><small>xywh 44.9, 79.2, 554.0, 345.5</small></td><td>0.970</td></tr>
+<tr><td>3</td><td>Abweichende Box</td><td>000000005001.jpg<br><small>ID 5001</small></td><td>person · ID 1328232<br><small>xywh 444.5, 91.7, 162.9, 378.6</small></td><td>person · Score 0.753<br><small>xywh 362.4, 94.7, 163.3, 383.0</small></td><td>0.326</td></tr>
+<tr><td>4</td><td>Mögliche doppelte Box</td><td>000000005037.jpg<br><small>ID 5037</small></td><td>bus · ID 169115<br><small>xywh 99.3, 20.1, 475.6, 352.4</small></td><td>bus · ID 900100005002<br><small>xywh 99.3, 20.1, 475.6, 352.4</small></td><td>1.000</td></tr>
+<tr><td>5</td><td>Box außerhalb des Bildes</td><td>000000006040.jpg<br><small>ID 6040</small></td><td>train · ID 172843<br><small>xywh 63.1, 84.4, 584.9, 222.4</small></td><td>—</td><td>—</td></tr></tbody></table></div></section>
+</main></body></html>

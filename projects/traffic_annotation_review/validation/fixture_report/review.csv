@@ -1,0 +1,6 @@
+review_id,kind,image_id,file_name,annotation_id,reference_class,reference_xywh,prediction_class,prediction_xywh,prediction_score,iou,other_annotation_id,review_decision
+1,missing_box,11,street_a.jpg,,,,traffic light,"[300.0, 90.0, 14.0, 36.0]",0.82,,,
+2,class_conflict,22,street_b.jpg,201,car,"[50.0, 50.0, 120.0, 70.0]",person,"[50.0, 50.0, 120.0, 70.0]",0.93,1.0,,
+3,box_alignment,33,street_c.jpg,301,person,"[75.0, 100.0, 40.0, 110.0]",person,"[97.0, 100.0, 40.0, 110.0]",0.92,0.2903225806451613,,
+4,duplicate_box,11,street_a.jpg,102,car,"[150.0, 40.0, 110.0, 50.0]",,,,0.9819819819819819,103,
+5,box_out_of_bounds,44,street_d.jpg,401,traffic light,"[620.0, 90.0, 30.0, 36.0]",,,,,,

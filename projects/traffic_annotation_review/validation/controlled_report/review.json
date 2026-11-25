@@ -1,0 +1,249 @@
+{
+  "thresholds": {
+    "min_score": 0.65,
+    "match_iou": 0.5,
+    "candidate_iou": 0.2,
+    "class_iou": 0.65,
+    "duplicate_iou": 0.9,
+    "ignore_ioa": 0.5
+  },
+  "category_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    27,
+    28,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    67,
+    70,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90
+  ],
+  "coverage": {
+    "images_in_annotations": 12,
+    "images_with_predictions": 12,
+    "verified_evaluated_images": 12
+  },
+  "summary": {
+    "matched_boxes": 22,
+    "high_score_predictions": 25,
+    "images_with_findings": 5,
+    "findings": {
+      "missing_box": 1,
+      "class_conflict": 1,
+      "box_alignment": 1,
+      "duplicate_box": 1,
+      "box_out_of_bounds": 1
+    }
+  },
+  "findings": [
+    {
+      "kind": "missing_box",
+      "image_id": 1584,
+      "file_name": "000000001584.jpg",
+      "annotation": null,
+      "prediction": {
+        "bbox": [
+          128.75514221191406,
+          86.47282409667969,
+          393.41221618652344,
+          448.5060577392578
+        ],
+        "category_id": 6,
+        "category": "bus",
+        "annotation_id": null,
+        "score": 0.9197147488594055
+      },
+      "other_annotation": null,
+      "iou": null,
+      "review_id": 1
+    },
+    {
+      "kind": "class_conflict",
+      "image_id": 2006,
+      "file_name": "000000002006.jpg",
+      "annotation": {
+        "bbox": [
+          46.38,
+          80.9,
+          563.06,
+          345.17
+        ],
+        "category_id": 3,
+        "category": "car",
+        "annotation_id": 165069,
+        "score": null
+      },
+      "prediction": {
+        "bbox": [
+          44.918701171875,
+          79.15655517578125,
+          554.0350341796875,
+          345.5351867675781
+        ],
+        "category_id": 6,
+        "category": "bus",
+        "annotation_id": null,
+        "score": 0.9111465215682983
+      },
+      "other_annotation": null,
+      "iou": 0.9701284181704106,
+      "review_id": 2
+    },
+    {
+      "kind": "box_alignment",
+      "image_id": 5001,
+      "file_name": "000000005001.jpg",
+      "annotation": {
+        "bbox": [
+          444.4585,
+          91.69,
+          162.87,
+          378.6
+        ],
+        "category_id": 1,
+        "category": "person",
+        "annotation_id": 1328232,
+        "score": null
+      },
+      "prediction": {
+        "bbox": [
+          362.4302978515625,
+          94.73516845703125,
+          163.2989501953125,
+          383.0483703613281
+        ],
+        "category_id": 1,
+        "category": "person",
+        "annotation_id": null,
+        "score": 0.7533857226371765
+      },
+      "other_annotation": null,
+      "iou": 0.3257642691415184,
+      "review_id": 3
+    },
+    {
+      "kind": "duplicate_box",
+      "image_id": 5037,
+      "file_name": "000000005037.jpg",
+      "annotation": {
+        "bbox": [
+          99.33,
+          20.06,
+          475.61,
+          352.41
+        ],
+        "category_id": 6,
+        "category": "bus",
+        "annotation_id": 169115,
+        "score": null
+      },
+      "prediction": null,
+      "other_annotation": {
+        "bbox": [
+          99.33,
+          20.06,
+          475.61,
+          352.41
+        ],
+        "category_id": 6,
+        "category": "bus",
+        "annotation_id": 900100005002,
+        "score": null
+      },
+      "iou": 1.0,
+      "review_id": 4
+    },
+    {
+      "kind": "box_out_of_bounds",
+      "image_id": 6040,
+      "file_name": "000000006040.jpg",
+      "annotation": {
+        "bbox": [
+          63.1,
+          84.4,
+          584.9,
+          222.43
+        ],
+        "category_id": 7,
+        "category": "train",
+        "annotation_id": 172843,
+        "score": null
+      },
+      "prediction": null,
+      "other_annotation": null,
+      "iou": null,
+      "review_id": 5
+    }
+  ]
+}

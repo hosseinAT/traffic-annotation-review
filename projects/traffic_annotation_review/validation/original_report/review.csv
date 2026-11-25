@@ -1,0 +1,1 @@
+review_id,kind,image_id,file_name,annotation_id,reference_class,reference_xywh,prediction_class,prediction_xywh,prediction_score,iou,other_annotation_id,review_decision
